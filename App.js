@@ -17,7 +17,7 @@ if (!global.atob) {
 }
 
 export default App = () => {
-  //cerrarsesion();
+ // cerrarsesion();
 
   const [user, setUser] = useState(false);
   const [loading, setLoading] = useState(false);

@@ -44,8 +44,7 @@ export default function HiraganaEjemplos(list) {
           </View>
         </View>
         </View>
-        <Text style={styles.textWord}> {words[0].palabra}</Text>
-        <Text style={styles.textWord}> 1/100</Text>
+        
       
       
       
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
   miniContainer: {
     backgroundColor: "#2B1E47",
     width: "100%",
-    height: 370,
+    height: 800,
     borderRadius: 16,
   },
   subText: {

@@ -7,38 +7,47 @@ import { color } from "react-native-reanimated";
 export default function VocabularioSub(props) {
   const name = props.props.hiragana;
   const palabra = props.props.palabra;
-  const alternativas = props.props.alternativas;
+  //const alternativas = props.props.alternativas;
   const oraciones = props.props.oraciones;
   const oracionesTraduccion = props.props.oracionesTraduccion;
+  const traduccion = props.props.traduccion
+  const numero = props.props.numero
   const { width } = useWindowDimensions();
-  console.log("NAME------------------------------");
-  console.log(name);
+ // console.log("NAME------------------------------");
+ // console.log(name);
+ // console.log(oraciones);
+ // console.log(oracionesTraduccion)
   //console.log("type of");
   //console.log(typeof(name));
   return (
     <View style={[styles.container, { width }]}>
       <Text style={styles.text}>{Object.values(name)}</Text>
       <Text style={styles.subTextSup}>{palabra}</Text>
-      <View style={styles.subContainer}>
+     
         <Text style={styles.subText}>Oraciones de ejemplo: </Text>
         <Text style={{ marginLeft: 20, fontSize: 16,marginTop:20, color: "#000" }}>
           {" "}
-          {alternativas}{" "}
+          {oraciones}{" "}
         </Text>
-        <Text style={styles.subText}>Alternativas: </Text>
         <Text
           style={{ marginLeft: 20, fontSize: 16, marginTop: 20, color: "#000" }}
         >
-          {oraciones}{" "}
+          {oracionesTraduccion}{" "}
         </Text>
 
         <Text
           style={{ marginLeft: 20, fontSize: 16, marginTop: 20, color: "#000" }}
         >
-          {oracionesTraduccion}
+          {traduccion}{" "}
         </Text>
-      </View>
-    </View>
+
+
+        <Text
+          style={{ marginLeft: 20, fontSize: 16, marginTop: 20, color: "#000" }}
+        >
+          {numero}
+        </Text>
+  </View>
   );
 }
 
@@ -63,11 +72,12 @@ const styles = StyleSheet.create({
   },
   subTextSup: {
     marginTop: 20,
+    fontSize: 17,
     color: "#fff",
   },
   text: {
     fontWeight: "bold",
-    fontSize: 96,
+    fontSize: 70,
     color: "#fff",
   },
   subText: {
