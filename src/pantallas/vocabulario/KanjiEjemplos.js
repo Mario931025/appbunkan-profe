@@ -53,14 +53,15 @@ export default function HiraganaEjemplos(list) {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
   },
   miniContainer: {
-    backgroundColor: "#360C29",
+    backgroundColor: "#2B1E47",
     width: "100%",
-    height: 370,
+    height: 800,
     borderRadius: 16,
   },
   subText: {

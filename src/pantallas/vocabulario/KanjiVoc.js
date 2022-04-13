@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { StyleSheet, Text, View ,Image, FlatList, ScrollView} from 'react-native'
-import vocabulario from '../../../vocabulario'
+import vocabulario from '../../../vocabularioKanji'
 //import TaskList from '../../components/TaskList';
 import VocabularioList from './KanjiList';
 
@@ -18,7 +18,7 @@ export default function  HiraganaVoc() /*extends React.Component*/ {
     //render(){
     return (
         <ScrollView style={styles.container}>
-            <Image source ={require("../../../assets/Kanji.png")} style={styles.imgPrincipa}/>
+            <Image source ={require("../../../assets/puertasTorri.png")} style={styles.imgPrincipa}/>
             <Text style={styles.title}>
             語彙 - kanji 
             </Text>
