@@ -23,6 +23,7 @@ import CursoZorro from '../pantallas/Cursos/CursoZorro';
 import CursoAvanzado from "../pantallas/Cursos/CursoAvanzado";
 import CursoBasico from "../pantallas/Cursos/CursoBasico";
 
+
 import Contacto from '../pantallas/Tienda/Contacto'
 
 import {createDrawerNavigator} from '@react-navigation/drawer'
@@ -237,6 +238,8 @@ function HomeScreen() {
       <Stack.Screen component = {CursoZorro} name="zorro" options={{headerShown:false}}/>
       <Stack.Screen component = {CursoBasico} name="basico" options={{headerShown:false}}/>
       <Stack.Screen component = {CursoAvanzado} name="avanzado" options={{headerShown:false}}/>
+
+      
       
       <Stack.Screen component = {Hiragana} name="hiragana" options={{headerShown:false}}/>
       <Stack.Screen component = {KatakanaVoc} name="katakanaVoc" options={{headerShown:false}}/>
