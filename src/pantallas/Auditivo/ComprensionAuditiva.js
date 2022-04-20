@@ -43,36 +43,309 @@ const audioBookPlaylist = [
     
   },
   {
-    title: 'Hamlet - Act II',
-    author: 'William Shakespeare',
-    source: 'Librivox',
+    title: '買い物 - Numeros',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 2',
     uri:
-      'https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act2_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F11%20Pista%2011.mp3?alt=media&token=0076197d-e193-4358-a155-3ca9cbdc41b2',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`１．いち、に、さん、よん/し、ご、ろく、なな/しち、はち、きゅう/く、じゅう
+    ２．じゅういち、じゅうに、じゅうさん、じゅうよん/じゅうし、じゅうご、じゅうろく、じゅうなな/じゅうしち、じゅうはち、じゅうきゅう/じゅうく
+    ３．にじゅう、さんじゅう、よんじゅう、ごじゅう、ろくじゅう、ななじゅう、しちじゅう、はちじゅう、きゅうじゅう
+    ４．ひゃく、にひゃく、さんびゃく、よんひゃく、ごひゃく、ろっぴゃく、ななひゃく、はっぴゃく、きゅうひゃく
+    5．せん/いっせん、にせん、さんぜん、よんせん、ごせん、ろくせん、ななせん、はっせん、きゅうせん
+    6．いちまん`,
+    textoEspañol:`1.　１，２，３，４，５，６，７，８，９，10 
+    ２．11，12，13，14，15，16，17，18，19
+    3. 20，30，40，50，60，70，80，90
+    4. 100，200，300，400，500，600，700，800，900
+    5. 1000，2000，3000，4000，5000，6000，7000，8000，9000
+    6.10000`
   },
   {
-    title: 'Hamlet - Act III',
-    author: 'William Shakespeare',
-    source: 'Librivox',
-    uri: 'http://www.archive.org/download/hamlet_0911_librivox/hamlet_act3_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+    title: '買い物 - Compra',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 3',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F11%20Pista%2011.mp3?alt=media&token=0076197d-e193-4358-a155-3ca9cbdc41b2',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`A: ハンバーガー　は　いくらですか
+    Ｂ: 200(にひゃく) えん　です
+    A:ハンバーガー　と　コーヒ　を　ください
+    Ｂ:はい
+    A:いくらですか
+    B:350(さんびゃくごじゅう)　えんです`,
+    textoEspañol:`A: ¿La hambuguesa cuánto cuesta?
+    B: 200 YENES
+    A: Por favor deme una hamburguesa y un café
+    B: si
+    A:¿Cuánto es?
+    B: son 350 yenes`
   },
   {
-    title: 'Hamlet - Act IV',
-    author: 'William Shakespeare',
-    source: 'Librivox',
+    title: '時間 - Jikan',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 4',
     uri:
-      'https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act4_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F17%20Pista%2017.mp3?alt=media&token=e7cafaa9-0b84-441f-ba3f-bbcc9da13a24',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`A: すみません、いま、なんじですか。
+    Ｂ: 4(よ)　じ　よんじゅうご　ふん　です。
+    A:ありがとうございます。`,
+    textoEspañol:`A: Disculpa, ahora, ¿qué hora es?
+    B: Son las 4 con 45 minutos
+    A: Muchas gracias`
   },
   {
-    title: 'Hamlet - Act V',
-    author: 'William Shakespeare',
-    source: 'Librivox',
+    title: '月 - Meses',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 5',
     uri:
-      'https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act5_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F19%20Pista%2019.mp3?alt=media&token=b95d8c8e-1937-4a6d-a900-7c184e5c5ed0',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`いちがつ、にがつ、さんがつ、しがつ
+    ごがつ、ろくがつ、しちがつ、はちがつ　
+    くがつ、じゅうがつ、じゅういちがつ、じゅうにがつ
+    なんがつ`,
+    textoEspañol:`enero, febrero, marzo, abril
+    mayo, junio, julio, agosto
+    septiembre, octubre, noviembre, diciembre
+    ¿qué mes?`
+  },
+  {
+    title: '日 - Dias (del mes)',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 6',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F20%20Pista%2020.mp3?alt=media&token=6f0a6304-a281-47ce-87de-a1eee9442715',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`ついたち、ふつか、みっか、よっか
+    いつか、むいか、なのか、ようか
+    ここのか、とおか、じゅういちにち、じゅうよっか
+    じゅうくにち、はつか、にじゅうよっか、にじゅうくにち
+    なんにち`,
+    textoEspañol:`Dia 1 (mes), 2, 3, 4,
+    5, 6, 7, 8,
+    9, 10, 12, 14,
+    19, 20, 24, 29,
+    ¿qué día del mes?`
+  }, 
+  {
+    title: '曜日　 - Dias (de la semana)',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 7',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F21%20Pista%2021.mp3?alt=media&token=a740af72-6d69-4da7-9db4-a89cae5fba8c',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`げつようび、かようび、
+    すいようび、もくようび、
+    きんようび、どようび
+    にちようび、なんようび`,
+    textoEspañol:`lunes, martes,
+    miercoles, jueves,
+    viernes, sábado
+    domingo, ¿qué día (de la semana)`
+  }, 
+  {
+    title: '紹介　 - Presentaciones',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 8',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F24%20Pista%2024.mp3?alt=media&token=62b41bb2-2178-41b0-9a3b-60244079fdf9',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`(きょうしつで)
+    A: はじめまして。わたしは　ワン　シューミンです。
+    シンガポールからきました。
+    B: はじめまして。ラフルです。
+    インドからきました。
+    A: どうぞよろしくおねがいします。
+    B:　よろしくおねがいします`,
+    textoEspañol:`(en el salón de clases)
+    A:Mucho gusto, Soy Wan Shuumin
+    vengo desde Singapur,
+    B:Mucho gusto,soy Rafael
+    vengo desde la India
+    A: Es un place conocerte
+    B: El placer es mio`
+  },
+  {
+    title: '紹介二 - Presentaciones 2',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 8',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F26%20Pista%2026.mp3?alt=media&token=34c863a4-09a9-4620-ac4d-2dc7927f91e2',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`(がくせいかいかん で)
+    A: はじめまして。はらです。
+    B: わたし は　ワンです。
+    よろしくおねがいします。
+    A: ワンさん は　だいがくせい です か。
+    B:　いいえ、にほんごがっこう の がくせいです
+    A:わたしは　ぶんか おんがく だいがく の がくせい　です
+    よろしく`,
+    textoEspañol:`(En el dormitorio de estudiantes)
+    A:Mucho gusto, soy Hara.
+    B:Mucho gusto,soy Wan,
+    es un placer conocerte
+    A: Wan, eres estudiante universitario?
+    B: No, soy estudiante de una escuela del idioma Japonés
+    A: Yo soy estudiante de una universidad de musica cultural
+    es un placer conocerte`
+  },
+  {
+    title: '休み - Descanso',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 9',
+    uri:
+      'https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F28%20Pista%2028.mp3?alt=media&token=0f94e1c0-3898-4cb3-8a7f-dcba2b381487',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`(きょうしつ で)
+    A: じゅぎょう は　くじ　じっぷん　からです。
+    B: なんじまでですか。
+    A: にじ　ごじっぷん　までです。
+    B:　ひるやすみは　なんじから　なんじまでですか。
+    A:あのう、やすみは　いつですか。
+    B:どようび　と　にちようびです`,
+    textoEspañol:`(En el salón de clases)
+    A:La clase inicia desde las 9 con 10min.
+    B:¿Hasta que hora terminara?,
+    A: Hasta las 2:50
+    B: El resceso de medio dia ¿desde que hora inicia y hasta que hora termina?
+    A: Desde las 12 hasta la 1
+    B:este..., ¿los descansos cuando son?
+    A: los sabados y los domingos.`
+  },
+ 
+  {
+    title: '動詞 - Verbo',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 10',
+    uri:
+      ' https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F30%20Pista%2030.mp3?alt=media&token=a6ecbbed-3226-4499-befc-1a1d7b51530f',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`
+    1.のみます
+    ２．たべます
+    ３，みます
+    ４．ききます
+    ５．よみます
+    ６．かきます
+    ７．すいます
+    8．します
+    9．しごとをします
+    10．べんきょうをしています
+    11．テニスをします
+    12．おきます
+    13．ねます
+    14．いきます
+    15．かえります
+    16．きます`,
+    textoEspañol:`
+    1. Beber
+    ２．Comer
+    ３，Ver
+    ４. Escuchar
+    ５．Leer
+    ６．Escribir
+    ７．Fumar
+    8．Hacer
+    9．Trabajar
+    10．Estudiar
+    11．Jugar Tenis
+    12．Despertar
+    13．Dormir
+    14．Ir
+    15．Regresar
+    16．Venir`
+  },
+
+  {
+    title: '一日 - Un día ',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 11',
+    uri:
+      '  https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F32%20Pista%2032.mp3?alt=media&token=ffef1806-59dd-4715-a692-7557e53335af',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`
+    1.しちじはん　に　おきます
+    コーヒー を のみます
+    ２．がっこう へ いきます
+    ３．9じから 3じまで　がっこう で べんきょうをします。
+    ４．さんじはん から テニス を します
+    ５．ろくじに うち へ かえります
+    ばんごはん を たべます
+    6．テレビ を みます
+    7．じゅういちじはん に ねます`,
+    textoEspañol:`
+    1. me levanto a las 7 y media
+    tomo café
+    2.voy a la escuela
+    3. desde las 9 hasta las 3 estudio en la escuela
+    4．desde las tres y media juego tenis
+    5．A las 6 regreso a casa
+    ceno
+    6. veo la televisión
+    7.Me duermo a las 11 y media
+    `
   }
+  ,
+
+  {
+    title: '一日 - Un día ',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 11',
+    uri:
+      '  https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F32%20Pista%2032.mp3?alt=media&token=ffef1806-59dd-4715-a692-7557e53335af',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`
+    1.しちじはん　に　おきます
+    コーヒー を のみます
+    ２．がっこう へ いきます
+    ３．9じから 3じまで　がっこう で べんきょうをします。
+    ４．さんじはん から テニス を します
+    ５．ろくじに うち へ かえります
+    ばんごはん を たべます
+    6．テレビ を みます
+    7．じゅういちじはん に ねます`,
+    textoEspañol:`
+    1. me levanto a las 7 y media
+    tomo café
+    2.voy a la escuela
+    3. desde las 9 hasta las 3 estudio en la escuela
+    4．desde las tres y media juego tenis
+    5．A las 6 regreso a casa
+    ceno
+    6. veo la televisión
+    7.Me duermo a las 11 y media
+    `
+  }
+  ,
+
+  {
+    title: '会話 一 - Conversación 1 ',
+    author: 'BUNKAN NICHIBOKU',
+    source: 'Audio 12',
+    uri:
+      '  https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/Auditivos%2F34%20Pista%2034.mp3?alt=media&token=24aad7f4-4150-4fa5-a425-e04526d4ceda',
+    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg',
+    textoJapones:`(にちようび　きょうしつで)
+    A: おはようございます。
+    Ｂ: おはようございます。
+    A:ワンさんは　きのう、なにをしましたか
+    しぶやで　えいが　を　みました。ラフルさんは?
+    B:わたしは　テニスをしまました
+    A:どうですか`,
+    textoEspañol:`
+    (Domingo en el salón de clases)
+    A: Buenos días。
+    Ｂ: Buenos días。
+    A:Wan, ¿qué hiciste ayer?
+    En shibuya vi una película, Y tu Rafar?
+    B:Yo jugué tenis
+    A:Oh, ya veo.
+    `
+  }
+
 ]
 
 export default class ComprensionAuditiva extends React.Component {
@@ -186,7 +459,7 @@ export default class ComprensionAuditiva extends React.Component {
         <Text style={[styles.trackInfoText, styles.smallText]}>
           {audioBookPlaylist[currentIndex].textoJapones}
         </Text>
-        <Text style={[styles.trackInfoTextEsp, styles.smallText]}>
+        <Text style={[styles.trackInfoTextEsp, styles.smallText,{marginTop:25}]}>
           {audioBookPlaylist[currentIndex].textoEspañol}
         </Text>
         </View>
@@ -231,7 +504,8 @@ render() {
                 <View style={styles.controls}>
                 <BlurView intensity={200} tint={'default'} style={{flex:1 ,height:210,flexDirection:"row",paddingLeft:50,paddingTop:75}}>
         <TouchableOpacity style={styles.control} onPress={this.handlePreviousTrack}>
-          <Ionicons name='caret-back-outline' size={48} color='#444' />
+          {this.state.currentIndex===0 ? ( null ): ( <Ionicons name='caret-back-outline' size={48} color='#444' /> )}
+          
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.control} onPress={this.handlePlayPause}>
@@ -243,7 +517,8 @@ render() {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.control} onPress={this.handleNextTrack}>
-          <Ionicons name='caret-forward-outline' size={48} color='#444' />
+        <Ionicons name='caret-forward-outline' size={48} color='#444' />
+          
         </TouchableOpacity>
 
         </BlurView>
