@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList,Linking } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Icon, Avatar, ButtonGroup, AirbnbRating } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native'
@@ -20,9 +20,19 @@ export default function CursoBasico() {
         Montserrat: require("../../../assets/fonts/Montserrat-Regular.ttf"),
         MontserratBold: require("../../../assets/fonts/Montserrat-Bold.ttf"),
         OpenSans: require("../../../assets/fonts/OpenSans-Regular.ttf")
+
+        
     });
 
+   
+
     const navigation = useNavigation();
+
+
+
+
+    
+
 
     if (!loaded) {
         return null;
@@ -144,6 +154,14 @@ function Renderizador(props){
 
    const{selectedIndex}=props
 
+   const tema1 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FROMANJI%2C%20HIRAGANA%2C%20KATAKANA.pdf?alt=media&token=3933d733-fe75-49c2-b25e-1d2b461b5f07")
+};
+const tema2 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fkanji.pdf?alt=media&token=26680281-d913-41ca-be07-d3dd6662d48d")
+};
+
+
     if (selectedIndex==0) {
         return(
             <View style={styles.galeria}>
@@ -251,6 +269,8 @@ function Renderizador(props){
             <View style={styles.temario}>
                 <View style={{marginLeft:20}}>
                     <Text style={styles.tituloTemario}>
+                        Da click en cada texto para descargar el PDF{"\n"}
+                        {"\n"}
                         Temario
                     </Text>
                 </View>
@@ -259,29 +279,25 @@ function Renderizador(props){
                     
                     {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
                     Esta unidad estara escrita en Romaji. {"\n"}*/}
-                    1. Romanji, Hiragana, Katakana (formas de escritura) {"\n"}
-                    1.1. KANJI {"\n"}
-                    2. Saludos y expresiones básicas.  あいさつ {"\n"}
-                    3. Verbo desu   動詞 {"\n"}
-                    4. Verbo dewaaarimasen  ではありません。{"\n"}
-                    5. Particulas {"\n"}
-                    5.1. Particula は {"\n"}
-                    5.2. Particula か {"\n"}
-                    5.3. Particula も {"\n"}
-                    5.4. Particula の {"\n"}
-                    6. Paises お国 {"\n"}
-                    6.1 Nacionalidades  国籍 {"\n"}
-                    7. Trabajos 仕事 {"\n"}
-                    8. Numeros  (0- 99999)  数 {"\n"}
-                    9. Meishi 名刺 {"\n"}
-                    10. Objetos  {"\n"}
-                    11. Telefonos 電話 {"\n"}
-                    12. Lugares  所 {"\n"}
-                    13. Horas 時間 {"\n"}
-                    13.1. Minutos 分 {"\n"}
-                    14. Compras {"\n"}
-                    15. Contadores basicos  (枚、本、つ) {"\n"}
-                    16. Comida 食べ物 {"\n"}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema1()
+                    }}>
+                   <Text style={styles.temas}> 1. Romanji, Hiragana, Katakana {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema2()
+                    }}>
+                   <Text style={styles.temas}>2. Kanji {"\n"} </Text>
+                    </TouchableOpacity>
+                    
                 </Text>
             </View>
         )
@@ -428,9 +444,18 @@ const styles = StyleSheet.create({
         fontWeight:'400',
         fontFamily:"OpenSans",
         justifyContent:'flex-start',
-        //left:width-500,
+       // left:width-350,
         //top:-20
-        marginLeft:15
+        marginLeft:15,
+       // borderColor:"red",
+        //borderWidth:15
+    },
+    temas:{
+        fontSize: 18,
+        fontWeight:"300",
+        fontFamily:"OpenSans",
+        justifyContent:'flex-start',
+        
     },
     comenzar:{
         //borderWidth:1,
