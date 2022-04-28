@@ -81,7 +81,7 @@ export default function CursoBasico() {
                     </TouchableOpacity>
                 </View>
                 <View style={{left:width-100, top:-30,}}>
-                    <TouchableOpacity 
+                   {/*<TouchableOpacity 
                         style={styles.btnBack}
                         onPress={()=>navigation.goBack()}
                     >
@@ -92,7 +92,7 @@ export default function CursoBasico() {
                             color="#E4253F"
                             style={{padding:0,justifyContent:'center',}}
                         />
-                    </TouchableOpacity>   
+                    </TouchableOpacity>   */}  
                 </View>
             </View>
             <View style={styles.body}>
@@ -128,7 +128,7 @@ export default function CursoBasico() {
                 <View style={styles.comenzar}>
                     <TouchableOpacity style={styles.btnComenzar}>
                         <Text style={styles.txtbton}>
-                            Comenzar
+                            Descargas
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnCora}>
@@ -140,7 +140,7 @@ export default function CursoBasico() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                         <Text style={styles.num}>
-                            563
+                            14,167
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -159,6 +159,36 @@ function Renderizador(props){
 };
 const tema2 = async () => {
     await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fkanji.pdf?alt=media&token=26680281-d913-41ca-be07-d3dd6662d48d")
+};
+const tema3 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FSALUDOS.pdf?alt=media&token=c2cbde38-53a8-4be8-8167-7ba06d48b3bb")
+};
+
+const tema4 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FDESU%2CDEWAARIMASEN.pdf?alt=media&token=f5223a29-cb5b-4d3d-bb9a-f7123d105fe0")
+};
+
+const tema5 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FParticula%20wa%20y%20ka.pdf?alt=media&token=cf705026-da98-48f6-b6a6-e136c6ff189a")
+};
+
+const tema6 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FPartciula%20mo%2C%20no.pdf?alt=media&token=d8a3cac9-d297-4889-becd-9ab3a67468c8")
+};
+
+const tema7 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fpaises%2C%20nacionalidades.pdf?alt=media&token=5095b223-b00f-48b4-adb3-e0791b2945cb")
+};
+
+const tema8 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fnumeros.pdf?alt=media&token=67cd6e84-c2fb-4290-a05d-1b6bb5bdbb17")
+};
+
+const tema9 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FHORAS%2C%20MINUTOS.pdf?alt=media&token=1d7045a9-99f7-4581-9841-176840832645")
+};
+const tema10 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fcompras.pdf?alt=media&token=f04e3374-5562-4d56-8fb3-ea7b42ff2046")
 };
 
 
@@ -289,8 +319,7 @@ const tema2 = async () => {
                 </Text>
                 <Text style={styles.cuerpoTemario}>
                     
-                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
-                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                  
                     
                     <TouchableOpacity  onPress={() => {
                         tema2()
@@ -299,6 +328,105 @@ const tema2 = async () => {
                     </TouchableOpacity>
                     
                 </Text>
+                <Text style={styles.cuerpoTemario}>
+                    
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema3()
+                    }}>
+                   <Text style={styles.temas}>3. Saludos {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema4()
+                    }}>
+                   <Text style={styles.temas}>4. Desu / dewaarimasen {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema5()
+                    }}>
+                   <Text style={styles.temas}>5. Particulas wa / ka {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema6()
+                    }}>
+                   <Text style={styles.temas}>6. Particulas mo / no {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema7()
+                    }}>
+                   <Text style={styles.temas}>7. Paises / Nacionalidades {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema8()
+                    }}>
+                   <Text style={styles.temas}>8. Paises / Nacionalidades {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema9()
+                    }}>
+                   <Text style={styles.temas}>9. Horas/ Minutos {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                
+                <Text style={styles.cuerpoTemario}>
+                    
+             
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema9()
+                    }}>
+                   <Text style={styles.temas}>10. Comprar algo {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+
+                
             </View>
         )
     }
@@ -491,7 +619,7 @@ const styles = StyleSheet.create({
     },
     btnCora:{
         backgroundColor:"#FFF0EB",
-        width:"20%",
+        width:"30%",
         borderRadius:17,
         height:65,
         alignItems:'center',
