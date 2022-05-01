@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList,Linking  } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Icon, Avatar, ButtonGroup, AirbnbRating } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native'
@@ -71,7 +71,9 @@ export default function CursoMapache() {
                     </TouchableOpacity>
                 </View>
                 <View style={{left:width-100, top:-30,}}>
-                    <TouchableOpacity 
+                    
+                    {/** 
+                     * <TouchableOpacity 
                         style={styles.btnBack}
                         onPress={()=>navigation.goBack()}
                     >
@@ -82,7 +84,9 @@ export default function CursoMapache() {
                             color="#E4253F"
                             style={{padding:0,justifyContent:'center',}}
                         />
-                    </TouchableOpacity>   
+                    </TouchableOpacity> 
+                     */}
+                      
                 </View>
             </View>
             <View style={styles.body}>
@@ -118,7 +122,7 @@ export default function CursoMapache() {
                 <View style={styles.comenzar}>
                     <TouchableOpacity style={styles.btnComenzar}>
                         <Text style={styles.txtbton}>
-                            Comenzar
+                            Descargas
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnCora}>
@@ -130,7 +134,7 @@ export default function CursoMapache() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                         <Text style={styles.num}>
-                            563
+                            15,486
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -145,6 +149,46 @@ function Renderizador(props){
    const{selectedIndex}=props
 
    
+
+   const tema1 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FMESES%20-%20DIAS%20MES.pdf?alt=media&token=ff31024b-8796-49ab-973a-388209520c1f")
+};
+
+const tema2 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FMESES-COLORES.pdf?alt=media&token=5f826a8b-29a1-4c80-ba25-413eb159ff1e")
+};
+
+const tema3 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FKARA-MADE.pdf?alt=media&token=cace512f-26ba-4710-ba73-00674a84a4cf")
+};
+
+const tema4 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FParticula%20to.pdf?alt=media&token=9e5732c1-e06c-483e-8411-d7190dee82d4")
+};
+
+const tema5 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FVERBOS.pdf?alt=media&token=275c0879-6f9e-42f2-99cf-471b41e1531b")
+};
+
+const tema6 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FPARTCIULA%20HE.pdf?alt=media&token=d7a6ef04-5561-46bd-b7f8-0aea616e9635")
+};
+
+const tema7 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fpartciula%20de.pdf?alt=media&token=e73d6882-089c-4eaf-901c-3d46c9ddd07d")
+};
+
+const tema8 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fpartciula%20ni.pdf?alt=media&token=18d2e038-d00f-4d8e-a520-0f97e230adc4")
+    
+
+};
+
+const tema9 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Fverbos%20pasado%20y%20negativo.pdf?alt=media&token=29e86cc1-bdfd-4f7b-9265-881b1d3883be")
+    
+
+};
 
     if (selectedIndex==0) {
         return(
@@ -257,22 +301,121 @@ function Renderizador(props){
                     </Text>
                 </View>
                 <Text style={styles.cuerpoTemario}>
-                    1. Fechas tiempos determinados {"\n"}
-                    1.1 Meses  月 {"\n"}
-                    1.2 Dias del mes 日 {"\n"}
-                    1.3 Dias de la semana 曜日 {"\n"}
-                    2. particula から まで {"\n"}
-                    3. Particula と {"\n"}
-                    4. Verbos  動詞 {"\n"}
-                    4.1 Verbos negativos 否定形 {"\n"}
-                    5. Particula を {"\n"}
-                    7. Particula へ {"\n"}
-                    8. Partciula で {"\n"}
-                    9. Partciula に {"\n"}
-                    10. Verbos pasado y pasado negativo 過去動詞 否定形- {"\n"}
-                    11 これは、それは、あれは {"\n"}
-                    12 Adjetivos   い形容詞, な形容詞 {"\n"}
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema1()
+                    }}>
+                   <Text style={styles.temas}> 1. Meses / dias del mes {"\n"} </Text>
+                    </TouchableOpacity>
+                    
                 </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema2()
+                    }}>
+                   <Text style={styles.temas}> 2. Dias semana / colores {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema3()
+                    }}>
+                   <Text style={styles.temas}> 3. Kara / Made  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema4()
+                    }}>
+                   <Text style={styles.temas}> 4. Particula to  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema5()
+                    }}>
+                   <Text style={styles.temas}> 5. Verbos  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema6()
+                    }}>
+                   <Text style={styles.temas}> 6.Partciula e  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema7()
+                    }}>
+                   <Text style={styles.temas}> 7.Partciula de  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema8()
+                    }}>
+                   <Text style={styles.temas}> 8.Partciula ni  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema9()
+                    }}>
+                   <Text style={styles.temas}> 9. verbos en pasado / negativo  {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+
             </View>
         )
     }
@@ -287,6 +430,14 @@ const styles = StyleSheet.create({
         alignItems:'center',
         alignSelf:'center',
         width:"100%",
+        
+    },
+    
+    temas:{
+        fontSize: 18,
+        fontWeight:"300",
+        fontFamily:"OpenSans",
+        justifyContent:'flex-start',
         
     },
     header:{
@@ -408,14 +559,14 @@ const styles = StyleSheet.create({
         //height:370
     },
     tituloTemario:{
-        fontSize:24,
+        fontSize:34,
         fontWeight:'600',
         fontFamily:"OpenSans",
         marginBottom:10,
     },
     cuerpoTemario:{
-        fontSize:18,
-        fontWeight:'400',
+        fontSize:24,
+        fontWeight:'600',
         fontFamily:"OpenSans",
         justifyContent:'flex-start',
         //left:width-500,
@@ -456,7 +607,7 @@ const styles = StyleSheet.create({
     },
     btnCora:{
         backgroundColor:"#FFF0EB",
-        width:"20%",
+        width:"30%",
         borderRadius:17,
         height:65,
         alignItems:'center',

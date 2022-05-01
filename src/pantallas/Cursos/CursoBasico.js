@@ -418,7 +418,7 @@ const tema10 = async () => {
              
                     
                     <TouchableOpacity  onPress={() => {
-                        tema9()
+                        tema10()
                     }}>
                    <Text style={styles.temas}>10. Comprar algo {"\n"} </Text>
                     </TouchableOpacity>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList,Linking } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Icon, Avatar, ButtonGroup, AirbnbRating } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native'
@@ -71,7 +71,8 @@ export default function CursoLeon() {
                     </TouchableOpacity>
                 </View>
                 <View style={{left:width-100, top:-30,}}>
-                    <TouchableOpacity 
+                    {/**
+                     *  <TouchableOpacity 
                         style={styles.btnBack}
                         onPress={()=>navigation.goBack()}
                     >
@@ -83,6 +84,8 @@ export default function CursoLeon() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                     </TouchableOpacity>   
+                     */}
+                   
                 </View>
             </View>
             <View style={styles.body}>
@@ -118,7 +121,7 @@ export default function CursoLeon() {
                 <View style={styles.comenzar}>
                     <TouchableOpacity style={styles.btnComenzar}>
                         <Text style={styles.txtbton}>
-                            Comenzar
+                            DESCARGAS
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnCora}>
@@ -130,7 +133,7 @@ export default function CursoLeon() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                         <Text style={styles.num}>
-                            563
+                            245,231
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -143,6 +146,31 @@ export default function CursoLeon() {
 function Renderizador(props){
 
    const{selectedIndex}=props
+
+   const tema1 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Ffamilia.pdf?alt=media&token=2af44cb6-9a62-43a7-a947-1589a3e47233")
+};
+
+const tema2 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%AB%E4%BD%8F%E3%82%93%E3%81%A7%E3%81%84%E3%81%BE%E3%81%99..pdf?alt=media&token=b016ab9b-5628-4f92-b72f-e71befa88909")
+};
+
+const tema3 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2Ftekara.pdf?alt=media&token=a494fe57-5df2-4cea-82e9-3752ac4538a0")
+};
+
+
+
+const tema4 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%9F%E3%81%84.pdf?alt=media&token=f8b912a9-5bd3-4381-914e-52fdbb7b82d7")
+};
+
+
+
+
+const tema5 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%8F%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99.pdf?alt=media&token=1a060e98-8dca-4785-9818-c9dc4fe3a711")
+};
 
     if (selectedIndex==0) {
         return(
@@ -254,19 +282,74 @@ function Renderizador(props){
                         Temario
                     </Text>
                 </View>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema1()
+                    }}>
+                   <Text style={styles.temas}> 1. 家族 {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
                 
                 <Text style={styles.cuerpoTemario}>
-                    1. Familia 家族 {"\n"}
-                    2. Forma 住んでいます {"\n"}
-                    3. Forma てから {"\n"}
-                    4. Forma たい {"\n"}
-                    5. Particula で {"\n"}
-                    6. Negativo informal verbos 基本体 {"\n"}
-                    7. Forma くなります {"\n"}
-                    8. Particula と condicional {"\n"}
-                    9. Leccion de 台所 {"\n"}
-                    10. Forma ています {"\n"}
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema2()
+                    }}>
+                   <Text style={styles.temas}> 2. に住んでいます {"\n"} </Text>
+                    </TouchableOpacity>
+                    
                 </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema3()
+                    }}>
+                   <Text style={styles.temas}> 3.てから {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema4()
+                    }}>
+                   <Text style={styles.temas}> 4.たい {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema4()
+                    }}>
+                   <Text style={styles.temas}> 5.くなります {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+                
+                
             </View>
         )
     }
@@ -281,6 +364,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         alignSelf:'center',
         width:"100%",
+        
+    },
+    temas:{
+        fontSize: 18,
+        fontWeight:"300",
+        fontFamily:"OpenSans",
+        justifyContent:'flex-start',
         
     },
     header:{
@@ -450,7 +540,7 @@ const styles = StyleSheet.create({
     },
     btnCora:{
         backgroundColor:"#FFF0EB",
-        width:"20%",
+        width:"30%",
         borderRadius:17,
         height:65,
         alignItems:'center',
