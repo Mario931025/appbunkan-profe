@@ -172,6 +172,15 @@ const tema5 = async () => {
     await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%8F%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99.pdf?alt=media&token=1a060e98-8dca-4785-9818-c9dc4fe3a711")
 };
 
+
+const tema6 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%A8.pdf?alt=media&token=7d73a765-bb1f-4307-9146-093a1c6d6ebd")
+};
+
+const tema7 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%B0%E3%80%81%E3%81%AA%E3%82%89%E3%80%81%E3%81%9F%E3%82%89.pdf?alt=media&token=684a43a9-18a7-458d-ae85-4a862a848874")
+};
+
     if (selectedIndex==0) {
         return(
             <View style={styles.galeria}>
@@ -342,9 +351,35 @@ const tema5 = async () => {
                     Esta unidad estara escrita en Romaji. {"\n"}*/}
                     
                     <TouchableOpacity  onPress={() => {
-                        tema4()
+                        tema5()
                     }}>
                    <Text style={styles.temas}> 5.くなります {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema6()
+                    }}>
+                   <Text style={styles.temas}> 6.と condicional {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema7()
+                    }}>
+                   <Text style={styles.temas}> 7.ば/なら/たら {"\n"} </Text>
                     </TouchableOpacity>
                     
                 </Text>
