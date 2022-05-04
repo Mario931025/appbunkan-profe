@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image,TouchableOpacity, StatusBar, Dimensions, FlatList,Linking} from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { Icon, Avatar, ButtonGroup, AirbnbRating } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native'
@@ -74,7 +74,8 @@ export default function CursoAvanzado() {
                     </TouchableOpacity>
                 </View>
                 <View style={{left:width-100, top:-30,}}>
-                    <TouchableOpacity 
+                    {/**
+                     *  <TouchableOpacity 
                         style={styles.btnBack}
                         onPress={()=>navigation.goBack()}
                     >
@@ -86,6 +87,7 @@ export default function CursoAvanzado() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                     </TouchableOpacity>   
+                     */}
                 </View>
             </View>
             <View style={styles.body}>
@@ -121,7 +123,7 @@ export default function CursoAvanzado() {
                 <View style={styles.comenzar}>
                     <TouchableOpacity style={styles.btnComenzar}>
                         <Text style={styles.txtbton}>
-                            Comenzar
+                            DESCARGAS
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnCora}>
@@ -133,7 +135,7 @@ export default function CursoAvanzado() {
                             style={{padding:0,justifyContent:'center',}}
                         />
                         <Text style={styles.num}>
-                            563
+                            514,321
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -146,6 +148,34 @@ export default function CursoAvanzado() {
 function Renderizador(props){
 
    const{selectedIndex}=props
+
+   
+   const tema1 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E6%84%8F%E5%90%91%E5%BD%A2.pdf?alt=media&token=b54c2341-bab6-4e34-b851-4f1f1e13375b")
+};
+
+
+const tema2 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%8B%E3%81%A9%E3%81%86%E3%81%8B.pdf?alt=media&token=aeef2983-313d-4bc9-8ce7-5ba3873a35ab")
+};
+
+
+const tema3 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%BE%E3%81%9B%E3%82%93.pdf?alt=media&token=45b44af1-ffd1-4db0-ae31-a56a084862fa")
+};
+
+const tema4 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99.pdf?alt=media&token=c5f9dd3b-e190-484b-a09c-1d1d5879ab49")
+};
+
+const tema5 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E3%81%93%E3%81%A8%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99.pdf?alt=media&token=582ed16e-9bdd-4eaf-a0d7-0d7018612cc9")
+};
+
+
+const tema6 = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2F%E6%80%A5%E3%81%AB.pdf?alt=media&token=d2be4c8d-fb0b-44b7-bd62-0bba401f714d")
+};
 
     if (selectedIndex==0) {
         return(
@@ -257,17 +287,86 @@ function Renderizador(props){
                         Temario
                     </Text>
                 </View>
+
                 <Text style={styles.cuerpoTemario}>
-                    1. Forma たことがあります {"\n"}
-                    2. Forma ん {"\n"}
-                    3. Forma でしょうか {"\n"}
-                    4. Forma と言っています {"\n"}
-                    5. Verbos avanzados 上級 動詞 {"\n"}
-                    6. Vocabulario avanzado 上級 語彙 {"\n"}
-                    7. ひま {"\n"}
-                    8. Contadores  助数詞 {"\n"}
-                    9. Tips avanzados {"\n"}
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema1()
+                    }}>
+                   <Text style={styles.temas}> 1. 意向形 {"\n"} </Text>
+                    </TouchableOpacity>
+                    
                 </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema2()
+                    }}>
+                   <Text style={styles.temas}> 2. かどうか {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema3()
+                    }}>
+                   <Text style={styles.temas}> 3. かもしれません {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema4()
+                    }}>
+                   <Text style={styles.temas}> 4. ことがあります {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema5()
+                    }}>
+                   <Text style={styles.temas}> 5. ことにします {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        tema6()
+                    }}>
+                   <Text style={styles.temas}> 6. 急に {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+               
             </View>
         )
     }
@@ -282,6 +381,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         alignSelf:'center',
         width:"100%",
+        
+    },
+    temas:{
+        fontSize: 18,
+        fontWeight:"300",
+        fontFamily:"OpenSans",
+        justifyContent:'flex-start',
         
     },
     header:{
@@ -451,7 +557,7 @@ const styles = StyleSheet.create({
     },
     btnCora:{
         backgroundColor:"#FFF0EB",
-        width:"20%",
+        width:"30%",
         borderRadius:17,
         height:65,
         alignItems:'center',
