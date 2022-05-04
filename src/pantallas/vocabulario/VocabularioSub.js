@@ -21,7 +21,12 @@ export default function VocabularioSub(props) {
   //console.log(typeof(name));
   return (
     <View style={[styles.container, { width }]}>
+       <Text style={{ marginLeft: 20, fontSize: 16,marginTop:20, color: "#000" }}>
+          {" "}
+          Desliza a la derecha para ver más palabras{" "}
+        </Text>
       <Text style={styles.text}>{Object.values(name)}</Text>
+     
       <Text style={styles.subTextSup}>{palabra}</Text>
      
         <Text style={styles.subText}>Oraciones de ejemplo: </Text>
@@ -43,7 +48,7 @@ export default function VocabularioSub(props) {
 
 
         <Text
-          style={{ marginLeft: 20, fontSize: 16, marginTop: 20, color: "#000" }}
+          style={{ marginLeft: 20, fontSize: 40, marginTop: 20, color: "#000" }}
         >
           {numero}
         </Text>

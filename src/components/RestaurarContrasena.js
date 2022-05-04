@@ -71,7 +71,10 @@ export default function Login(props)
             colors={["#3A0CA3", "#F72585"]}
             style={styles.button}
           >
-          <Text style={styles.text}>Recuperar contraseña</Text>
+            {
+              /* <Text style={styles.text}>Recuperar contraseña</Text> */
+            }
+          
         </LinearGradient>
       </TouchableOpacity>
 

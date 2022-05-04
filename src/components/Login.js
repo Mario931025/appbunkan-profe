@@ -134,16 +134,25 @@ export default function Login(props) {
           width: "80%",
         }}
       >
+        { /*
+        
         <Text style={styles.textRegister}>
           ¿Olvidaste tu contraseña? {"      "}
-        </Text>
+        </Text>*/}
+        
 
         <View style={{ marginVertical: "5%" }}>
           <TouchableOpacity
             style={styles.buttonSignIn2}
             onPress={() => navigation.navigate("restaurarP")}
           >
-            <Text style={styles.textRegistrar}>Haz clic aqui</Text>
+
+{ /*
+        
+        <Text style={styles.textRegister}>
+          <Text style={styles.textRegistrar}>Haz clic aqui</Text>
+        </Text>*/}
+            
           </TouchableOpacity>
         </View>
       </View>

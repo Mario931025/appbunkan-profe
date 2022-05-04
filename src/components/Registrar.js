@@ -178,12 +178,16 @@ export default Register = (props) => {
       
       <View style={{flexDirection:"row",justifyContent:"space-around",width:"70%", marginTop:15}}>
 
-        <Text style={styles.textRegister }>
+             
+            {/* <Text style={styles.textRegister }>
             O registrate con
-        </Text>
+        </Text>*/}
+           
+        
 
             <View style={{marginVertical:-14}}>
 
+              {/*
               <TouchableOpacity styles= {styles.buttomEnter}>
 
                 <Icon
@@ -197,11 +201,15 @@ export default Register = (props) => {
 
               </TouchableOpacity>
 
+              */ }
+
+              
             </View>
 
             <View style={{marginVertical:-14}}>
 
-              <TouchableOpacity styles={ styles.buttomEnter}>
+              {/*
+               <TouchableOpacity styles={ styles.buttomEnter}>
 
                 <Icon
                   size={35}
@@ -214,7 +222,11 @@ export default Register = (props) => {
 
               </TouchableOpacity>
 
+              */ }
+
+             
             </View>
+             
 
       </View>
 

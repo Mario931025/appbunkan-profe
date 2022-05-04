@@ -153,6 +153,12 @@ export default function CursoBasico() {
 function Renderizador(props){
 
    const{selectedIndex}=props
+   const hiraKata = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FA%20Guide%20to%20learning%20Hiragana%20and%20Katakana-18-114.pdf?alt=media&token=697a3028-4e92-4e88-9417-73d8bb4fefe2")
+};
+const kanji = async () => {
+    await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FBasic%20kanji%20book%201%2C2-1-102%20(1).pdf?alt=media&token=2dc54a68-c346-4f72-9d2e-eba9db5d9e7f")
+};
 
    const tema1 = async () => {
     await Linking.openURL("https://firebasestorage.googleapis.com/v0/b/bunkan-app-8d29e.appspot.com/o/PDF%2FROMANJI%2C%20HIRAGANA%2C%20KATAKANA.pdf?alt=media&token=3933d733-fe75-49c2-b25e-1d2b461b5f07")
@@ -304,6 +310,32 @@ const tema10 = async () => {
                         Temario
                     </Text>
                 </View>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        hiraKata()
+                    }}>
+                   <Text style={styles.temas}> Descargar libro de Hiragana y Katakana {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
+
+                <Text style={styles.cuerpoTemario}>
+                    
+                    {/*1. Tenmos que comentar que se necesita dominar hiragana, katakana y 12 kanji (formas de escritura) apartir de la certificacion N5.
+                    Esta unidad estara escrita en Romaji. {"\n"}*/}
+                    
+                    <TouchableOpacity  onPress={() => {
+                        hiraKata()
+                    }}>
+                   <Text style={styles.temas}> Descargar libro de kanji básico {"\n"} </Text>
+                    </TouchableOpacity>
+                    
+                </Text>
                 
                 <Text style={styles.cuerpoTemario}>
                     
@@ -579,7 +611,7 @@ const styles = StyleSheet.create({
         //borderWidth:15
     },
     temas:{
-        fontSize: 18,
+        fontSize: 16,
         fontWeight:"300",
         fontFamily:"OpenSans",
         justifyContent:'flex-start',

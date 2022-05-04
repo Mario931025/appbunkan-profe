@@ -156,15 +156,15 @@ export default function Casa() {
               dateNumberStyle={{ color: "white" }}
               dateNameStyle={{ color: "white" }}
               iconContainer={{ flex: 0.1 }}
-              daySelectionAnimation={{type: 'background', duration: 200, borderWidth: 1, highlightColor: 'white'}}
+              daySelectionAnimation={{type: 'background', duration: 200, borderWidth: 1, highlightColor: 'red'}}
               iconStyle={{color: "#fff"}}
               //locale={{name:'fr', config: 'calendarLanguaje'}}
               onDateSelected={(date) => {
-                  console.log(date);
-                  setModalVisible(true)
-                  console.log(modalVisible);
+                  //console.log(date);
+                  setModalVisible(false)
+                 // console.log(modalVisible);
               }}
-              onPress={() => setModalVisible(true)}
+              onPress={() => setModalVisible(false)}
       
             />
           </View>
@@ -178,7 +178,7 @@ export default function Casa() {
               style={{ marginVertical: 4, marginRight: 10 }}
             />
             <Text style={{ fontWeight: "bold", fontSize: 28 }}>
-              Eventos de hoy
+              Avisos escuela
             </Text>
           </View>
           <View style={{ flexDirection: "row", marginBottom: 10 }}>
@@ -190,8 +190,10 @@ export default function Casa() {
               color="#E4253F"
             />
             <Text style={{ fontWeight: "500", fontSize: 15 }}>
-              Renovar mi mensualidad
+              Bienvenido, 日本語を勉強しましょう
             </Text>
+            
+
           </View>
         </View>
         <View style={styles.misCursos}>

@@ -59,7 +59,7 @@ export default class Task extends React.Component {
 
         <View style={{ flexDirection: "row" }}>
           <View style={styles.divider} />
-          <Text style={styles.title}>宿題のリスト</Text>
+          <Text style={styles.title}>宿題リスト</Text>
           <View style={styles.divider} />
         </View>
 
