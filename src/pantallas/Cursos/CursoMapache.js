@@ -95,8 +95,8 @@ export default function CursoMapache() {
                     <Text style={styles.titulo}>Mapache N5</Text>
                 </View>
                 <View style={{alignItems:'center',justifyContent:'center',alignContent:'center',alignSelf:'center', }}>
-                    <Text style={styles.descri}>Uno de los niveles iniciales para comenzar</Text>
-                    <Text style={styles.descri2}>tu viaje por este fascinante idioma.</Text>
+                    <Text style={styles.descri}>Primer curso para examen</Text>
+                    <Text style={styles.descri2}>Domina bien hiragana y Katakana.</Text>
                 </View>
                 <View style={styles.btnera}>
                     <ButtonGroup
@@ -215,12 +215,15 @@ const tema9 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar3.jpg")}
+                            source={require("../../../assets/alexa.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Excelente curso, me gustaron mucho los temas para iniciar en mi camino de aprender japonés
+                        Me encanta estudiar en esta escuela, tiene un excelente ambiente escolar y además el profesor da lo mejor.{"\n"}
+                            {"\n"}
+                            -Alexa Dariana {"  "}  México
+
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -241,12 +244,15 @@ const tema9 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar1.jpg")}
+                            source={require("../../../assets/ami.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Me sorprendió mucho el curso, amo el idioma y esto me ayudó a aprender mucho
+                        La mejor escuela de japonés, 
+                        No siempre tengo tanto tiempo para estudiar y siempre me ayudan con los horarios.{"\n"}
+                            {"\n"}
+                            -Ami Rivas{"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -267,12 +273,14 @@ const tema9 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar4.jpg")}
+                            source={require("../../../assets/axel.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Muy buen curso, lo recomiendo bastante para iniciar en el idioma
+                        El profesor es muy didactico en sus clases y muestra una gran dedicación en la 
+                            enseñanza del idioma.{"\n"}
+                            -Axel Lopez{"  "}  Guatemala
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -631,7 +639,9 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         top:"10%",
-        left:"10%"
+        left:"10%",
+        marginRight:20
+
 
     },
     txtOpinion:{

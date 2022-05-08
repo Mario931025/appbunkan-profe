@@ -226,6 +226,7 @@ const styles = StyleSheet.create({
     color: "#C6C4C4",
     textDecorationLine: "underline",
     fontWeight: "bold",
+    marginTop: "-14%",
   },
   textLostPassword: {
     backgroundColor: "transparent",
@@ -252,7 +253,7 @@ const styles = StyleSheet.create({
   textRegister: {
     fontSize: 15,
     color: "#fff",
-    marginTop: "10%",
+    marginTop: "5%",
   },
   buttonRegister: {
     width: 400,

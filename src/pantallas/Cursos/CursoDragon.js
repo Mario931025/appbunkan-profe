@@ -218,38 +218,15 @@ const tema10 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar4.jpg")}
-                            style={styles.avatar}
-                            rounded
-                        />
-                        <Text style={styles.txtOpinion} >
-                            Excelente curso, me gustaron mucho los temas para iniciar en mi camino de aprender japonés
-                        </Text>
-                    </View >
-                        <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
-                            <AirbnbRating
-                                count={5}
-                                reviews={["Baja","Deficiente","Normal","Muy bueno","Excelente"]}
-                                defaultRating={5}
-                                size={20}
-                                reviewSize={20}
-                                isDisabled={true}
-                                reviewColor={"#ffdc14"}
-                                starContainerStyle={{top:-5}}
-                                selectedColor={"#ffdc14"}
-                                //showRating={false}
-                            />
-                        </View>
-                </View>
-                <View style={styles.opinion1}>
-                    <View style={{flexDirection:'row', }}>
-                        <Avatar
                             source={require("../../../assets/avatar3.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Me sorprendió mucho el curso, amo el idioma y esto me ayudó a aprender mucho
+                        Me gusta como se fuciona español con japonés{"\n"}
+                            {"\n"}
+                            -Takeda {"  "}  Japón
+                            
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -270,12 +247,42 @@ const tema10 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar1.jpg")}
+                            source={require("../../../assets/maru.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Muy buen curso, lo recomiendo bastante para iniciar en el idioma
+                        Siendo sincera, Bunkan me parece un increíble lugar para aprender. Las clases son muy prácticas y logran explicar muy bien conceptos difíciles para novatos en el idioma.{"\n"}
+                            {"\n"}
+                            -Marsella Parra {"  "}  Venezuela
+                        </Text>
+                    </View >
+                        <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
+                            <AirbnbRating
+                                count={5}
+                                reviews={["Baja","Deficiente","Normal","Muy bueno","Excelente"]}
+                                defaultRating={5}
+                                size={20}
+                                reviewSize={20}
+                                isDisabled={true}
+                                reviewColor={"#ffdc14"}
+                                starContainerStyle={{top:-5}}
+                                selectedColor={"#ffdc14"}
+                                //showRating={false}
+                            />
+                        </View>
+                </View>
+                <View style={styles.opinion1}>
+                    <View style={{flexDirection:'row', }}>
+                        <Avatar
+                            source={require("../../../assets/lesly.jpg")}
+                            style={styles.avatar}
+                            rounded
+                        />
+                        <Text style={styles.txtOpinion} >
+                        Me encantó la forma de aprender kanji, Mario sensei es super bueno.{"\n"}
+                            {"\n"}
+                            -Lesly {"  "}  Perú
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -653,7 +660,8 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         top:"10%",
-        left:"10%"
+        left:"10%",
+        marginRight:20
 
     },
     txtOpinion:{

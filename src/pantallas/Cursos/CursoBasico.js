@@ -223,12 +223,16 @@ const tema10 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar1.jpg")}
+                            source={require("../../../assets/alexa.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Excelente curso, me gustaron mucho los temas para iniciar en mi camino de aprender japonés
+                            
+                            Me encanta estudiar en esta escuela, tiene un excelente ambiente escolar y además el profesor da lo mejor.{"\n"}
+                            {"\n"}
+                            -Alexa Dariana {"  "}  México
+
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -249,12 +253,14 @@ const tema10 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar4.jpg")}
+                            source={require("../../../assets/kao.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Me sorprendió mucho el curso, amo el idioma y esto me ayudó a aprender mucho
+                        Mi experiencia en esta escuela ha sido muy grata gracias a la manera de explicar del sensei{"\n"}
+                            {"\n"}
+                            -Kao Shinpa  {"  "} México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -275,12 +281,16 @@ const tema10 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar3.jpg")}
+                            source={require("../../../assets/gerardo.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Muy buen curso, lo recomiendo bastante para iniciar en el idioma
+                        
+                        Mario sensei siempre te motiva e inspira para superarte tanto en su clase como fuera de ella{"\n"}
+                            {"\n"}
+                            -Gerardo Ortiz  {"  "} México
+
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -675,7 +685,8 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         top:"10%",
-        left:"10%"
+        left:"10%",
+        marginRight:20
 
     },
     txtOpinion:{

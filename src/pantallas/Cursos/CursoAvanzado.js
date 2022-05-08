@@ -202,12 +202,14 @@ const tema6 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar4.jpg")}
+                            source={require("../../../assets/kevin.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Excelente curso, me gustaron mucho los temas para iniciar en mi camino de aprender japonés
+                        Me gusta la escuela, le voy entiendo al japonés{"\n"}
+                            {"\n"}
+                            -Kevin {"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -228,12 +230,14 @@ const tema6 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar3.jpg")}
+                            source={require("../../../assets/pamela.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Me sorprendió mucho el curso, amo el idioma y esto me ayudó a aprender mucho
+                        Me gusta mucho la escuela por qué estoy aprendiendo mucho de la cultura Japonesa que tanto me gusta{"\n"}
+                            {"\n"}
+                            -Pamela Soto Martinez {"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -254,12 +258,14 @@ const tema6 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar1.jpg")}
+                            source={require("../../../assets/denise.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Muy buen curso, lo recomiendo bastante para iniciar en el idioma
+                        aprender de una forma más rápida el idioma, aprender japonés es una experiencia muy bonita en esta academia {"\n"}
+                            {"\n"}
+                            -Denise Garcia Garduño {"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -581,7 +587,8 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         top:"10%",
-        left:"10%"
+        left:"10%",
+        marginRight:20
 
     },
     txtOpinion:{

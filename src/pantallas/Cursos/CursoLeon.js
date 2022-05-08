@@ -206,12 +206,15 @@ const tema7 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar1.jpg")}
+                            source={require("../../../assets/marlene.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Excelente curso, me gustaron mucho los temas para iniciar en mi camino de aprender japonés
+                        Me llamo Marlene, soy de México, del municipio de michoacán.
+                        Estoy a punto de tener 1 año en la escuela, la verdad estoy muy feliz con lo que he aprendido, mi maestro Mario es buena onda{"\n"}
+                            {"\n"}
+                            -Marlene {"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -232,12 +235,15 @@ const tema7 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar4.jpg")}
+                            source={require("../../../assets/Rams.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Me sorprendió mucho el curso, amo el idioma y esto me ayudó a aprender mucho
+                        Bunkan Nichiboku es una excelente institución, dominio del lenguaje y versatilidad a la hora de enseñarlo. 
+                        Se siente una gran pasion por parte de ellos.{"\n"}
+                            {"\n"}
+                            -Ramses {"  "}  Colombia
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -258,12 +264,15 @@ const tema7 = async () => {
                 <View style={styles.opinion1}>
                     <View style={{flexDirection:'row', }}>
                         <Avatar
-                            source={require("../../../assets/avatar3.jpg")}
+                            source={require("../../../assets/diego.jpg")}
                             style={styles.avatar}
                             rounded
                         />
                         <Text style={styles.txtOpinion} >
-                            Muy buen curso, lo recomiendo bastante para iniciar en el idioma
+                        ¡Feliz de ser alumno del Sensei Mario García!
+                        Diego Tovar Lozada.{"\n"}
+                            {"\n"}
+                            -Diego Tovar {"  "}  México
                         </Text>
                     </View >
                         <View style={{ width:"50%", alignItems:'center',alignSelf:'flex-end', marginRight:"10%", top:"-2%"}}>
@@ -599,7 +608,8 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         top:"10%",
-        left:"10%"
+        left:"10%",
+        marginRight:20
 
     },
     txtOpinion:{
